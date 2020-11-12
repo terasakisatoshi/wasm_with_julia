@@ -1,12 +1,11 @@
 # WASM with Julia
 
-- This notebook provides the reader with a demo that uses a Julia package called WebAssembly.jl to generate a .wasm file and call it locally.
-- We'll assume you've installed Julia
+- This notebook provides the reader with a demo that uses a Julia package called [WebAssembly.jl](https://github.com/MikeInnes/WebAssembly.jl) to generate a .wasm file and call it on your device.
+- We'll assume you've installed [Julia](https://julialang.org/)
 
 # Quick start
 
 - Install LiveServer.jl via 
-
 
 ```console
 $ julia

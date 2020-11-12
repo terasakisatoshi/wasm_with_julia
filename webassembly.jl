@@ -15,7 +15,7 @@
 
 # # WASM with Julia
 #
-# - This notebook provides the reader with a demo that uses a Julia package called WebAssembly.jl to generate a .wasm file and call it locally.
+# - This notebook provides the reader with a demo that uses a Julia package called WebAssembly.jl to generate a .wasm file and call on your device
 #
 
 # ## Install Packages
