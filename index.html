@@ -22,8 +22,10 @@ https://www.tutorialspoint.com/webassembly/webassembly_hello_world.htm
          .then(module => {return new WebAssembly.Instance(module)})
          .then(instance => {   
             console.log(instance); 
-            let result = instance.exports.twice(1.0); 
-            document.getElementById("textcontent").innerHTML = result; 
+            const num = 3.0
+            let result = instance.exports.twice(num); 
+        	let msg = `twice(${num}) = ${result}`;
+            document.getElementById("textcontent").innerHTML = msg;
          });
       </script>
    </body>
