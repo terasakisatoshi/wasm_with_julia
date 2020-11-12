@@ -105,3 +105,4 @@ julia> exit()
 ```
 
 - You'll see a file named `twice.wasm` at your current working directory.
+- You can also see `webassembly.jl` as a Jupyter Notebook.
