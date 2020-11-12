@@ -1,0 +1,30 @@
+<!-- 
+https://www.tutorialspoint.com/webassembly/webassembly_hello_world.htm
+-->
+
+<!doctype html> 
+<html> 
+   <head> 
+      <meta charset="utf-8"> 
+      <title>WebAssembly Add Function</title>
+      <style>
+         div { 
+            font-size : 30px; text-align : center; color: blue; 
+         } 
+      </style>
+   </head>
+   <body>
+      <div id="textcontent"></div>
+      <script> 
+         fetch("twice.wasm") // Load wasm file
+         .then(bytes => bytes.arrayBuffer())
+         .then(mod => WebAssembly.compile(mod))
+         .then(module => {return new WebAssembly.Instance(module)})
+         .then(instance => {   
+            console.log(instance); 
+            let result = instance.exports.twice(1.0); 
+            document.getElementById("textcontent").innerHTML = result; 
+         });
+      </script>
+   </body>
+</html>
